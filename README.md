@@ -16,47 +16,48 @@ Installation - Client
 		<plist version="1.0">
 		<dict>
 		
-		<key>NotifyOnChange</key> <!-- should we send messages to the notification center -->
-		<true/>
+			<key>NotifyOnChange</key> <!-- should we send messages to the notification center -->
+			<true/>
 		
-		<key>NotifyWithSound</key> <!-- should our messages also include a sound? if NotifyOnChange is false, this will do nothing -->
-		<true/>
+			<key>NotifyWithSound</key> <!-- should our messages also include a sound? if NotifyOnChange is false, this will do nothing -->
+			<true/>
 		
-		<key>SkipIfNotificationsDisabled</key> <!-- if true, then services which have notifications disabled are skipped and not considered -->
-		<true/>
+			<key>SkipIfNotificationsDisabled</key> <!-- if true, then services which have notifications disabled are skipped and not considered -->
+			<true/>
 		
-		<key>CheckFrequencySeconds</key> <!-- how many seconds to wait between checks - don't make this too fast, you might hurt yourself -->
-		<integer>30</integer>
+			<key>CheckFrequencySeconds</key> <!-- how many seconds to wait between checks - don't make this too fast, you might hurt yourself -->
+			<integer>30</integer>
 		
-		<key>Servers</key>
-		<array>
+			<key>Servers</key>
+			<array>
 		
-		<dict>
-			<key>Name</key>
-			<string>Example1</string>
-			<key>URL</key>
-			<string>http://example.com/nagios/statusJson.php</string>
-			<key>AdminURL</key>
-			<string>http://admin.edit.firechrome.org/nagios/</string>
-			<key>Username</key>
-			<string>nagios</string>
-			<key>Password</key>
-			<string>secret</string>
-		</dict>
- 
-		<!-- you can specify as many nagios instance as you like, list each out here as a dict -->
-		<dict>
-			<key>Name</key>
-			<string>Example2</string>
-			<key>URL</key>
-			<string>http://example2.example.com/nagios/cgi-bin/statusJson.php</string>
-			<key>AdminURL</key>
-			<string>http://example2.example.com/nagios/</string>
-			<key>Username</key>
-			<string>nagios</string>
-			<key>Password</key>
-			<string>secret</string>
-		</dict>
+			<!-- point this at your nagios setup - see other instructions for how to get statusJson.php -->
+			<dict>
+				<key>Name</key>
+				<string>Example1</string>
+				<key>URL</key>
+				<string>http://example.com/nagios/statusJson.php</string>
+				<key>AdminURL</key>
+				<string>http://admin.edit.firechrome.org/nagios/</string>
+				<key>Username</key>
+				<string>nagios</string>
+				<key>Password</key>
+				<string>secret</string>
+			</dict>
+ 			
+			<!-- you can specify as many nagios instance as you like, list each out here as a dict -->
+			<dict>
+				<key>Name</key>
+				<string>Example2</string>
+				<key>URL</key>
+				<string>http://example2.example.com/nagios/cgi-bin/statusJson.php</string>
+				<key>AdminURL</key>
+				<string>http://example2.example.com/nagios/</string>
+				<key>Username</key>
+				<string>nagios</string>
+				<key>Password</key>
+				<string>secret</string>
+			</dict>
 		
 		</array>
 		
