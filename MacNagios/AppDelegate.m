@@ -393,35 +393,48 @@
      */
     
     NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
-    
     NSString *configPath = [bundlePath stringByAppendingPathComponent:@"macnagios-config.plist"];
     
     NSDictionary *config = [NSDictionary dictionaryWithContentsOfFile:configPath];
     
-    if (config == nil) {
-        NSLog(@"Cannot read from config.plist - it's either corrupt or it doesn't exist, trying to read from /etc/macnagios-config.plist.sample");
-        // read from sample if main fails
-        configPath = @"/etc/macnagios-config.plist";
-        config = [NSDictionary dictionaryWithContentsOfFile:configPath];
-        if (config == nil) {
-            NSLog(@"Cannot read from /etc/macnagios-config.plist, either, nothing I can do about this - you fix it.");
-            
-            // we got issues, let the user know - so when the user first opens it, they have a hint of what to do
-            
-            NSAlert *alert = [[NSAlert alloc] init];
-            //[alert setAlertStyle:NSRunInformationalAlertPanel];
-            [alert addButtonWithTitle:@"OK"];
-            [alert setMessageText:@"No nagios servers are configured!"];
-            [alert setInformativeText:@"Find the folder for this app and look at the macnagios-config.json.sample file for instructions."];
-            [alert setAlertStyle:NSWarningAlertStyle];
-            if ([alert runModal] == NSAlertFirstButtonReturn) {
-                //
-            }
-            
-            return;
-            
-        }
+    NSMutableArray *configPaths = [[NSMutableArray alloc] init];
+    [configPaths addObject:[NSString stringWithFormat:@"%@/macnagios-config.plist", NSHomeDirectory()]];
+    [configPaths addObject:configPath];
+    [configPaths addObject:@"/etc/macnagios-config.plist"];
+
+    for (int i = 0; i < [configPaths count]; i++) {
+        config = [NSDictionary dictionaryWithContentsOfFile:[configPaths objectAtIndex:i]];
+        if (config != nil) { break; }
     }
+    
+    if (config == nil) {
+        
+        NSLog(@"Cannot find macnagios-config.plist, nothing I can do about this - you fix it.");
+        
+        // we got issues, let the user know - so when the user first opens it, they have a hint of what to do
+        
+        NSAlert *alert = [[NSAlert alloc] init];
+        //[alert setAlertStyle:NSRunInformationalAlertPanel];
+        [alert addButtonWithTitle:@"OK"];
+        [alert setMessageText:@"No nagios servers are configured!"];
+        [alert setInformativeText:@"You'll need to create a macnagios-config.plist config file in order for this app to work correctly."];
+        [alert setAlertStyle:NSWarningAlertStyle];
+        if ([alert runModal] == NSAlertFirstButtonReturn) {
+            //
+        }
+        
+        return;
+    }
+    
+//    if (config == nil) {
+//        NSLog(@"Cannot read from config.plist - it's either corrupt or it doesn't exist, trying to read from /etc/macnagios-config.plist.sample");
+//        // read from sample if main fails
+//        configPath = @"/etc/macnagios-config.plist";
+//        config = [NSDictionary dictionaryWithContentsOfFile:configPath];
+//        if (config == nil) {
+//            
+//        }
+//    }
     
     NSLog(@"loaded config dictionary: %@", config);
     
@@ -473,6 +486,7 @@
     // name - MacNagios? - DONE
     // implement UseColorIcons or get rid of the option (get rid of it) - DONE
     // see which service changed and include that in the notice - DONE
+    // make it read config also from home dir
     // icon
     // github - DONE
     // binary packaging (google code?) - google docs for now - DONE

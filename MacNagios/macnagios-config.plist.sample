@@ -6,7 +6,7 @@
 Main configuration file.
 
 Steps:
-1. Copy this file to either macnagios-config.plist (same directory) or to /etc/macnagios-config.plist
+1. Copy this file to either macnagios-config.plist (same directory) or to /etc/macnagios-config.plist or to your home directory.
 2. For each nagios instance you plan to monitor:
       Find the folder that has your nagios index.php in it (generally something like /usr/share/nagios/)
       and download a copy of statusJson.php, like so:
