@@ -472,10 +472,10 @@
     // make pop up happen at the right time - DONE
     // name - MacNagios? - DONE
     // implement UseColorIcons or get rid of the option (get rid of it) - DONE
-    // see which service changed and include that in the notice
+    // see which service changed and include that in the notice - DONE
     // icon
-    // github
-    // binary packaging (google code?)
+    // github - DONE
+    // binary packaging (google code?) - google docs for now - DONE
     
 }
 
