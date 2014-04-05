@@ -71,6 +71,15 @@ Note that you'll need to add the statusJson.php file on the Nagios server, see b
 Server Setup
 ============
 
+For status information, MacNagios uses statusJson.php: https://github.com/lizell/php-nagios-json
+
+Installation is really simple:
+
+* Find the folder that has your nagios index.php in it (generally something like /usr/share/nagios/) and download a copy of statusJson.php, like so:
+
+		wget 'https://raw.githubusercontent.com/lizell/php-nagios-json/master/statusJson.php'
+
+* Edit the top of statusJson.php to have the correct path to your Nagios status.dat file
 
 
 Downloads
