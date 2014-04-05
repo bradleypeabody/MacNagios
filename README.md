@@ -103,6 +103,10 @@ MacNagios is not able to pull the status information.  For now, the best way to 
 
 And you'll probably see stuff like "Error while getting URL..." - which you should be able to debug from there.
 
+### Does MacNagios report on hosts?
+
+No, MacNagios only reports on services and currently ignores host statuses.  In all of the configurations I've seen this works out okay, and that's all I had time to code.  Hopefully it works for you as well.
+
 ### Why do I have to edit a config file? - this is a Mac app!
 
 Well, this is sysadmin tool.  If you don't know how to edit a config file, you very likely don't need this app.
