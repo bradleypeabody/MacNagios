@@ -91,8 +91,10 @@ v0.1 - https://docs.google.com/file/d/0B8eMv4SjaIClSzNuS1REV3dnR3c (File -> Down
 FAQ
 ===
 
+Since I'm writing this this document as I'm first releasing the software, the total number of questions I've received is zero.  With a static frequency of zero for all questions, the only thing that made sense was to list whatever came to mind, in random order:
+
 ### Are you Scottish?
-No, MacNagios has nothing to do with Scotland.
+No.  But Scotland is cool.
 
 Credits
 =======
