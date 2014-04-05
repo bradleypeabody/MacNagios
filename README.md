@@ -77,7 +77,7 @@ Installation is really simple:
 
 * Find the folder that has your nagios index.php in it (generally something like /usr/share/nagios/) and download a copy of statusJson.php, like so:
 
-		wget 'https://raw.githubusercontent.com/lizell/php-nagios-json/master/statusJson.php'
+		curl 'https://raw.githubusercontent.com/lizell/php-nagios-json/master/statusJson.php' > statusJson.php
 
 * Edit the top of statusJson.php to have the correct path to your Nagios status.dat file
 
@@ -88,15 +88,17 @@ Downloads
 
 v0.1 - https://docs.google.com/file/d/0B8eMv4SjaIClSzNuS1REV3dnR3c (File -> Download)
 
-
-Configuration
-=============
-
 FAQ
 ===
 
+Since I'm writing this this document as I'm first releasing the software, the total number of questions I've received is zero.  With a static frequency of zero for all questions, the only thing that made sense was to list whatever came to mind, in random order:
+
+### Why do I have to edit a config file? - this is a Mac app!
+
+Well, this is sysadmin tool.  If you don't know how to edit a config file, you very likely don't need this app.
+
 ### Are you Scottish?
-No, MacNagios has nothing to do with Scotland.
+No.  But the program might be, considering it's name.
 
 Credits
 =======
