@@ -12,22 +12,22 @@ Installation - Client
 * Example config file:
 
 		<?xml version="1.0" encoding="UTF-8"?>
-	<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-	<plist version="1.0">
-	<dict>
-	
-	<key>NotifyOnChange</key> <!-- should we send messages to the notification center -->
-	<true/>
- 
-	<key>NotifyWithSound</key> <!-- should our messages also include a sound? if NotifyOnChange is false, this will do nothing -->
-	<true/>
- 
-	<key>SkipIfNotificationsDisabled</key> <!-- if true, then services which have notifications disabled are skipped and not considered -->
-	<true/>
- 
-	<key>CheckFrequencySeconds</key> <!-- how many seconds to wait between checks - don't make this too fast, you might hurt yourself -->
-	<integer>30</integer>
- 
+		<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+		<plist version="1.0">
+		<dict>
+		
+		<key>NotifyOnChange</key> <!-- should we send messages to the notification center -->
+		<true/>
+		
+		<key>NotifyWithSound</key> <!-- should our messages also include a sound? if NotifyOnChange is false, this will do nothing -->
+		<true/>
+		
+		<key>SkipIfNotificationsDisabled</key> <!-- if true, then services which have notifications disabled are skipped and not considered -->
+		<true/>
+		
+		<key>CheckFrequencySeconds</key> <!-- how many seconds to wait between checks - don't make this too fast, you might hurt yourself -->
+		<integer>30</integer>
+		
 		<key>Servers</key>
 		<array>
 		
@@ -57,12 +57,12 @@ Installation - Client
 			<key>Password</key>
 			<string>secret</string>
 		</dict>
- 
-	</array>
-	
-	</dict>
-	
-	</plist>
+		
+		</array>
+		
+		</dict>
+		
+		</plist>
 
 
 Note that you'll need to add a file on the Nagios server, see below.
