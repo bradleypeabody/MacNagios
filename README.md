@@ -28,7 +28,7 @@ Installation - Client
 	<key>CheckFrequencySeconds</key> <!-- how many seconds to wait between checks - don't make this too fast, you might hurt yourself -->
 	<integer>30</integer>
  
-	<key>Servers</key>
+		<key>Servers</key>
 		<array>
 		
 		<dict>
