@@ -38,7 +38,7 @@ Installation - Client
 				<key>URL</key>
 				<string>http://example.com/nagios/statusJson.php</string> <!-- this is where the real data comes from, as JSON -->
 				<key>AdminURL</key>
-				<string>http://admin.edit.firechrome.org/nagios/</string> <!-- this is where you go when you click for more info about the status -->
+				<string>http://example.com/nagios/</string> <!-- this is where you go when you click for more info about the status -->
 				<key>Username</key> <!-- authentication data - comment this and the 2 next lines out if you don't need it (i.e. you are restricting by IP) -->
 				<string>nagios</string>
 				<key>Password</key>

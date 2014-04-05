@@ -43,7 +43,7 @@ Steps:
 			<key>URL</key>
 			<string>http://example.com/nagios/statusJson.php</string>
 			<key>AdminURL</key>
-			<string>http://admin.edit.firechrome.org/nagios/</string>
+			<string>http://example.com/nagios/</string>
 			<key>Username</key>
 			<string>nagios</string>
 			<key>Password</key>
