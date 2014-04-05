@@ -98,7 +98,7 @@ Since I'm writing this this document as I'm first releasing the software, the to
 Well, this is sysadmin tool.  If you don't know how to edit a config file, you very likely don't need this app.
 
 ### Are you Scottish?
-No.  But the name made for good humor.
+No.  But the program might be, considering it's name.
 
 Credits
 =======
