@@ -45,7 +45,7 @@ Installation - Client
 				<string>secret</string>
 			</dict>
  			
-			<!-- you can specify as many nagios instance as you like, list each out here as a dict -->
+			<!-- you can specify as many nagios instance as you like, list each out here as a dict 
 			<dict>
 				<key>Name</key>
 				<string>Example2</string>
@@ -58,6 +58,7 @@ Installation - Client
 				<key>Password</key>
 				<string>secret</string>
 			</dict>
+			-->
 		
 			</array>
 		
