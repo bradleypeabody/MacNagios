@@ -417,7 +417,7 @@
         //[alert setAlertStyle:NSRunInformationalAlertPanel];
         [alert addButtonWithTitle:@"OK"];
         [alert setMessageText:@"No nagios servers are configured!"];
-        [alert setInformativeText:@"You'll need to create a macnagios-config.plist config file in order for this app to work correctly."];
+        [alert setInformativeText:@"You'll need to create a macnagios-config.plist config file in order for this app to work correctly.  See the doc at https://github.com/bradleypeabody/MacNagios"];
         [alert setAlertStyle:NSWarningAlertStyle];
         if ([alert runModal] == NSAlertFirstButtonReturn) {
             //
