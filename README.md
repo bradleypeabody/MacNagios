@@ -29,8 +29,8 @@ Installation - Client
 	<integer>30</integer>
  
 	<key>Servers</key>
-	<array>
- 
+		<array>
+		
 		<dict>
 			<key>Name</key>
 			<string>Example1</string>
