@@ -3,7 +3,7 @@ MacNagios
 
 Nagios status bar monitoring tool for MacOS X.
 
-Have you ever wished that you could just look at the top right corner of your Mac desktop and see a little icon and a number that indicated how your servers were doing?  And if something went wrong, get a little message in your notification center that said what happened.  Wish no more, my friend - MacNagios is just that.
+Have you ever wished that you could just look at the top right corner of your Mac desktop and see a little icon and a number that indicated how your servers were doing?  And if something went wrong, get a little message in your notification center that says what happened?  Wish no more, my friend - MacNagios is just that ~~and more~~!
 
 Installation - Client
 =====================
