@@ -28,6 +28,16 @@
     CFRelease(url);
 }
 
+- (NSString *)stateNumberToString:(int)stateNum {
+    switch (stateNum) {
+        case 0: return @"OK";
+        case 1: return @"WARNING";
+        case 2: return @"CRITICAL";
+        case 3: return @"UNKNOWN";
+        default: return nil;
+    }
+}
+
 - (void)menuClickHandler:(id)arg {
     NSLog(@"menuClickHandler: %@", arg);
     
@@ -121,7 +131,7 @@
     
     [self.statusItem setMenu:menu];
     
-    if (![self.lastStatusString isEqualToString:str]) {
+    if ((![self.lastStatusString isEqualToString:str]) || [self.checkMessages count] > 0) {
         
         [self setLastStatusString:str]; // update status
         
@@ -133,7 +143,20 @@
             // send notification
             NSUserNotification *notification = [[NSUserNotification alloc] init];
             notification.title = @"Nagios Status Change";
-            notification.informativeText = str;
+            
+            int c = (int)[self.checkMessages count];
+            
+            int showCount = 1;
+            
+            NSString *msg = [NSString stringWithFormat:@"%@ (%d changed)", str, c];
+            for (int i = 0; i < c && i < showCount; i++) {
+                NSString *line = [self.checkMessages objectAtIndex:i];
+                msg = [NSString stringWithFormat:@"%@\n%@", msg, line];
+            }
+            if (c > showCount) {
+                msg = [NSString stringWithFormat:@"%@\n+%d more...", msg, c-showCount];
+            }
+            notification.informativeText = msg;
             
             if ([notifyWithSound intValue]) {
                 notification.soundName = NSUserNotificationDefaultSoundName;
@@ -144,6 +167,9 @@
         
         
     }
+    
+    // no matter what, when we're done here, we nuke the messages
+    [self.checkMessages removeAllObjects];
     
 }
 
@@ -265,6 +291,20 @@
                 [stateNum isEqual:@"3"] && unkCount++;
                 totalCount++;
                 
+                NSString *serviceStatusKey = [NSString stringWithFormat:@"%@/%@", hostKey, serviceKey];
+                
+                NSNumber *stateNumber = [NSNumber numberWithInt:[stateNum intValue]];
+                
+                NSNumber *oldStateNumber = [self.serviceStatusDict objectForKey:serviceStatusKey];
+                //NSLog(@"oldStateNumber - %@ / stateNumber - %@", oldStateNumber, stateNumber);
+                if (oldStateNumber == nil) { oldStateNumber = [NSNumber numberWithInt:-1]; }
+                if ([stateNumber intValue] != [oldStateNumber intValue]) {
+                    NSString *s =[NSString stringWithFormat:@"%@ - %@", serviceStatusKey, [self stateNumberToString:[stateNumber intValue]]];
+                    [self.checkMessages addObject:s];
+                }
+                
+                [self.serviceStatusDict setObject:stateNumber forKey:serviceStatusKey];
+
             }
             
         }
@@ -302,7 +342,9 @@
     // status string starts off empty
     [self setLastStatusString:@""];
     
-    
+    [self setServiceStatusDict:[[NSMutableDictionary alloc] init]];
+    [self setCheckMessages:[[NSMutableArray alloc] init]];
+
     NSStatusBar *bar = [NSStatusBar systemStatusBar];
     
     [self setStatusItem:[bar statusItemWithLength:NSVariableStatusItemLength]];

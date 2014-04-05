@@ -17,8 +17,9 @@
 @property NSTimer *timer;
 @property NSDictionary *configData; // data loaded from config plist
 @property NSArray *checkResults; // the results of the checking
-@property NSString *lastStatusString; // the last status string we had
-@property NSDictionary *serviceStatusDict; // keep track of the last status of each service - so we can make a list of what changed
+@property NSMutableArray *checkMessages; // an array of strings which are the messages that go into the next alert
+@property NSString *lastStatusString; // the last overall status string we had
+@property NSMutableDictionary *serviceStatusDict; // keep track of the last status of each service - so we can make a list of what changed
 //@property NSMenu *menu;
 
 @end
