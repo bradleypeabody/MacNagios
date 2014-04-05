@@ -18,6 +18,13 @@
 		77740CBA18EF91ED0094E659 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77740C9918EF91EC0094E659 /* Cocoa.framework */; };
 		77740CC218EF91EE0094E659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77740CC018EF91EE0094E659 /* InfoPlist.strings */; };
 		77740CC418EF91EE0094E659 /* MacNagiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77740CC318EF91EE0094E659 /* MacNagiosTests.m */; };
+		77740CD418EF92A10094E659 /* nagios-icon-smaller-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 77740CCE18EF92A10094E659 /* nagios-icon-smaller-green.png */; };
+		77740CD518EF92A10094E659 /* nagios-icon-smaller-orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 77740CCF18EF92A10094E659 /* nagios-icon-smaller-orange.png */; };
+		77740CD618EF92A10094E659 /* nagios-icon-smaller-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 77740CD018EF92A10094E659 /* nagios-icon-smaller-red.png */; };
+		77740CD718EF92A10094E659 /* nagios-icon-smaller-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 77740CD118EF92A10094E659 /* nagios-icon-smaller-yellow.png */; };
+		77740CD818EF92A10094E659 /* nagios-icon-smaller.png in Resources */ = {isa = PBXBuildFile; fileRef = 77740CD218EF92A10094E659 /* nagios-icon-smaller.png */; };
+		77740CD918EF92A10094E659 /* nagios-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 77740CD318EF92A10094E659 /* nagios-icon.png */; };
+		77740CDB18EF92CC0094E659 /* macnagios-config.plist.sample in Resources */ = {isa = PBXBuildFile; fileRef = 77740CDA18EF92CC0094E659 /* macnagios-config.plist.sample */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,13 @@
 		77740CBF18EF91ED0094E659 /* MacNagiosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacNagiosTests-Info.plist"; sourceTree = "<group>"; };
 		77740CC118EF91EE0094E659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		77740CC318EF91EE0094E659 /* MacNagiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacNagiosTests.m; sourceTree = "<group>"; };
+		77740CCE18EF92A10094E659 /* nagios-icon-smaller-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nagios-icon-smaller-green.png"; sourceTree = "<group>"; };
+		77740CCF18EF92A10094E659 /* nagios-icon-smaller-orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nagios-icon-smaller-orange.png"; sourceTree = "<group>"; };
+		77740CD018EF92A10094E659 /* nagios-icon-smaller-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nagios-icon-smaller-red.png"; sourceTree = "<group>"; };
+		77740CD118EF92A10094E659 /* nagios-icon-smaller-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nagios-icon-smaller-yellow.png"; sourceTree = "<group>"; };
+		77740CD218EF92A10094E659 /* nagios-icon-smaller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nagios-icon-smaller.png"; sourceTree = "<group>"; };
+		77740CD318EF92A10094E659 /* nagios-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nagios-icon.png"; sourceTree = "<group>"; };
+		77740CDA18EF92CC0094E659 /* macnagios-config.plist.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "macnagios-config.plist.sample"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +129,7 @@
 		77740C9F18EF91EC0094E659 /* MacNagios */ = {
 			isa = PBXGroup;
 			children = (
+				77740CCD18EF92A10094E659 /* images */,
 				77740CAB18EF91EC0094E659 /* AppDelegate.h */,
 				77740CAC18EF91EC0094E659 /* AppDelegate.m */,
 				77740CAE18EF91ED0094E659 /* MainMenu.xib */,
@@ -127,6 +142,7 @@
 		77740CA018EF91EC0094E659 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				77740CDA18EF92CC0094E659 /* macnagios-config.plist.sample */,
 				77740CA118EF91EC0094E659 /* MacNagios-Info.plist */,
 				77740CA218EF91EC0094E659 /* InfoPlist.strings */,
 				77740CA518EF91EC0094E659 /* main.m */,
@@ -152,6 +168,19 @@
 				77740CC018EF91EE0094E659 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77740CCD18EF92A10094E659 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				77740CCE18EF92A10094E659 /* nagios-icon-smaller-green.png */,
+				77740CCF18EF92A10094E659 /* nagios-icon-smaller-orange.png */,
+				77740CD018EF92A10094E659 /* nagios-icon-smaller-red.png */,
+				77740CD118EF92A10094E659 /* nagios-icon-smaller-yellow.png */,
+				77740CD218EF92A10094E659 /* nagios-icon-smaller.png */,
+				77740CD318EF92A10094E659 /* nagios-icon.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +259,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77740CD618EF92A10094E659 /* nagios-icon-smaller-red.png in Resources */,
+				77740CD418EF92A10094E659 /* nagios-icon-smaller-green.png in Resources */,
 				77740CA418EF91EC0094E659 /* InfoPlist.strings in Resources */,
+				77740CD818EF92A10094E659 /* nagios-icon-smaller.png in Resources */,
+				77740CD518EF92A10094E659 /* nagios-icon-smaller-orange.png in Resources */,
 				77740CB218EF91ED0094E659 /* Images.xcassets in Resources */,
 				77740CAA18EF91EC0094E659 /* Credits.rtf in Resources */,
+				77740CDB18EF92CC0094E659 /* macnagios-config.plist.sample in Resources */,
+				77740CD918EF92A10094E659 /* nagios-icon.png in Resources */,
+				77740CD718EF92A10094E659 /* nagios-icon-smaller-yellow.png in Resources */,
 				77740CB018EF91ED0094E659 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
