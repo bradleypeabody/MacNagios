@@ -50,12 +50,12 @@ Steps:
 			<string>secret</string>
 		</dict>
 
-		<!-- you can specify as many nagios instance as you like, list each out here as a dict -->
+		<!-- you can specify as many nagios instance as you like, list each out here as a dict
 		<dict>
 			<key>Name</key>
 			<string>Example2</string>
 			<key>URL</key>
-			<string>http://example2.example.com/nagios/cgi-bin/statusJson.php</string>
+			<string>http://example2.example.com/nagios/statusJson.php</string>
 			<key>AdminURL</key>
 			<string>http://example2.example.com/nagios/</string>
 			<key>Username</key>
@@ -63,6 +63,7 @@ Steps:
 			<key>Password</key>
 			<string>secret</string>
 		</dict>
+        -->
 
 	</array>
 
