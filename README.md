@@ -11,10 +11,11 @@ Installation - Client
 * Create a macnagios-config.plist file in either your home directory or in /etc/
 * Example config file:
 
- <?xml version="1.0" encoding="UTF-8"?>
- <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
- <plist version="1.0">
- <dict>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+	<plist version="1.0">
+	<dict>
+	
 	<key>NotifyOnChange</key> <!-- should we send messages to the notification center -->
 	<true/>
  
@@ -58,10 +59,10 @@ Installation - Client
 		</dict>
  
 	</array>
- 
- </dict>
- 
- </plist>
+	
+	</dict>
+	
+	</plist>
 
 
 Note that you'll need to add a file on the Nagios server, see below.
