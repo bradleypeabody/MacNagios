@@ -77,7 +77,7 @@ Installation is really simple:
 
 * Find the folder that has your nagios index.php in it (generally something like /usr/share/nagios/) and download a copy of statusJson.php, like so:
 
-		wget 'https://raw.githubusercontent.com/lizell/php-nagios-json/master/statusJson.php'
+		curl 'https://raw.githubusercontent.com/lizell/php-nagios-json/master/statusJson.php' > statusJson.php
 
 * Edit the top of statusJson.php to have the correct path to your Nagios status.dat file
 
