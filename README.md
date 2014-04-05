@@ -93,6 +93,10 @@ FAQ
 
 Since I'm writing this this document as I'm first releasing the software, the total number of questions I've received is zero.  With a static frequency of zero for all questions, the only thing that made sense was to list whatever came to mind, in random order:
 
+### Why do I have to edit a config file? - this is a Mac app!
+
+Well, this is sysadmin tool.  If you don't know how to edit a config file, you very likely don't need this app.
+
 ### Are you Scottish?
 No.  But Scotland is cool.
 
