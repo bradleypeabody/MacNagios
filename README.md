@@ -22,8 +22,7 @@ Configuration
 FAQ
 ===
 
-Are you Scottish?
------------------
+### Are you Scottish?
 No, MacNagios has nothing to do with Scotland.
 
 Credits
