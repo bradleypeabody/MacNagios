@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77740C9A18EF91EC0094E659 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77740C9918EF91EC0094E659 /* Cocoa.framework */; };
+		77740CA418EF91EC0094E659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77740CA218EF91EC0094E659 /* InfoPlist.strings */; };
+		77740CA618EF91EC0094E659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77740CA518EF91EC0094E659 /* main.m */; };
+		77740CAA18EF91EC0094E659 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 77740CA818EF91EC0094E659 /* Credits.rtf */; };
+		77740CAD18EF91EC0094E659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77740CAC18EF91EC0094E659 /* AppDelegate.m */; };
+		77740CB018EF91ED0094E659 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77740CAE18EF91ED0094E659 /* MainMenu.xib */; };
+		77740CB218EF91ED0094E659 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77740CB118EF91ED0094E659 /* Images.xcassets */; };
+		77740CB918EF91ED0094E659 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77740CB818EF91ED0094E659 /* XCTest.framework */; };
+		77740CBA18EF91ED0094E659 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77740C9918EF91EC0094E659 /* Cocoa.framework */; };
+		77740CC218EF91EE0094E659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77740CC018EF91EE0094E659 /* InfoPlist.strings */; };
+		77740CC418EF91EE0094E659 /* MacNagiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77740CC318EF91EE0094E659 /* MacNagiosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77740CBB18EF91ED0094E659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77740C8E18EF91EC0094E659 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77740C9518EF91EC0094E659;
+			remoteInfo = MacNagios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77740C9618EF91EC0094E659 /* MacNagios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacNagios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77740C9918EF91EC0094E659 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		77740C9C18EF91EC0094E659 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		77740C9D18EF91EC0094E659 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		77740C9E18EF91EC0094E659 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		77740CA118EF91EC0094E659 /* MacNagios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacNagios-Info.plist"; sourceTree = "<group>"; };
+		77740CA318EF91EC0094E659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		77740CA518EF91EC0094E659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77740CA718EF91EC0094E659 /* MacNagios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacNagios-Prefix.pch"; sourceTree = "<group>"; };
+		77740CA918EF91EC0094E659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		77740CAB18EF91EC0094E659 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77740CAC18EF91EC0094E659 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77740CAF18EF91ED0094E659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		77740CB118EF91ED0094E659 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		77740CB718EF91ED0094E659 /* MacNagiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacNagiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77740CB818EF91ED0094E659 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		77740CBF18EF91ED0094E659 /* MacNagiosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacNagiosTests-Info.plist"; sourceTree = "<group>"; };
+		77740CC118EF91EE0094E659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		77740CC318EF91EE0094E659 /* MacNagiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacNagiosTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77740C9318EF91EC0094E659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77740C9A18EF91EC0094E659 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77740CB418EF91ED0094E659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77740CBA18EF91ED0094E659 /* Cocoa.framework in Frameworks */,
+				77740CB918EF91ED0094E659 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77740C8D18EF91EC0094E659 = {
+			isa = PBXGroup;
+			children = (
+				77740C9F18EF91EC0094E659 /* MacNagios */,
+				77740CBD18EF91ED0094E659 /* MacNagiosTests */,
+				77740C9818EF91EC0094E659 /* Frameworks */,
+				77740C9718EF91EC0094E659 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77740C9718EF91EC0094E659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77740C9618EF91EC0094E659 /* MacNagios.app */,
+				77740CB718EF91ED0094E659 /* MacNagiosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77740C9818EF91EC0094E659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77740C9918EF91EC0094E659 /* Cocoa.framework */,
+				77740CB818EF91ED0094E659 /* XCTest.framework */,
+				77740C9B18EF91EC0094E659 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77740C9B18EF91EC0094E659 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77740C9C18EF91EC0094E659 /* AppKit.framework */,
+				77740C9D18EF91EC0094E659 /* CoreData.framework */,
+				77740C9E18EF91EC0094E659 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		77740C9F18EF91EC0094E659 /* MacNagios */ = {
+			isa = PBXGroup;
+			children = (
+				77740CAB18EF91EC0094E659 /* AppDelegate.h */,
+				77740CAC18EF91EC0094E659 /* AppDelegate.m */,
+				77740CAE18EF91ED0094E659 /* MainMenu.xib */,
+				77740CB118EF91ED0094E659 /* Images.xcassets */,
+				77740CA018EF91EC0094E659 /* Supporting Files */,
+			);
+			path = MacNagios;
+			sourceTree = "<group>";
+		};
+		77740CA018EF91EC0094E659 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77740CA118EF91EC0094E659 /* MacNagios-Info.plist */,
+				77740CA218EF91EC0094E659 /* InfoPlist.strings */,
+				77740CA518EF91EC0094E659 /* main.m */,
+				77740CA718EF91EC0094E659 /* MacNagios-Prefix.pch */,
+				77740CA818EF91EC0094E659 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77740CBD18EF91ED0094E659 /* MacNagiosTests */ = {
+			isa = PBXGroup;
+			children = (
+				77740CC318EF91EE0094E659 /* MacNagiosTests.m */,
+				77740CBE18EF91ED0094E659 /* Supporting Files */,
+			);
+			path = MacNagiosTests;
+			sourceTree = "<group>";
+		};
+		77740CBE18EF91ED0094E659 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77740CBF18EF91ED0094E659 /* MacNagiosTests-Info.plist */,
+				77740CC018EF91EE0094E659 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77740C9518EF91EC0094E659 /* MacNagios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77740CC718EF91EE0094E659 /* Build configuration list for PBXNativeTarget "MacNagios" */;
+			buildPhases = (
+				77740C9218EF91EC0094E659 /* Sources */,
+				77740C9318EF91EC0094E659 /* Frameworks */,
+				77740C9418EF91EC0094E659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacNagios;
+			productName = MacNagios;
+			productReference = 77740C9618EF91EC0094E659 /* MacNagios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77740CB618EF91ED0094E659 /* MacNagiosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77740CCA18EF91EE0094E659 /* Build configuration list for PBXNativeTarget "MacNagiosTests" */;
+			buildPhases = (
+				77740CB318EF91ED0094E659 /* Sources */,
+				77740CB418EF91ED0094E659 /* Frameworks */,
+				77740CB518EF91ED0094E659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77740CBC18EF91ED0094E659 /* PBXTargetDependency */,
+			);
+			name = MacNagiosTests;
+			productName = MacNagiosTests;
+			productReference = 77740CB718EF91ED0094E659 /* MacNagiosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77740C8E18EF91EC0094E659 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = BGP;
+				TargetAttributes = {
+					77740CB618EF91ED0094E659 = {
+						TestTargetID = 77740C9518EF91EC0094E659;
+					};
+				};
+			};
+			buildConfigurationList = 77740C9118EF91EC0094E659 /* Build configuration list for PBXProject "MacNagios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77740C8D18EF91EC0094E659;
+			productRefGroup = 77740C9718EF91EC0094E659 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77740C9518EF91EC0094E659 /* MacNagios */,
+				77740CB618EF91ED0094E659 /* MacNagiosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77740C9418EF91EC0094E659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77740CA418EF91EC0094E659 /* InfoPlist.strings in Resources */,
+				77740CB218EF91ED0094E659 /* Images.xcassets in Resources */,
+				77740CAA18EF91EC0094E659 /* Credits.rtf in Resources */,
+				77740CB018EF91ED0094E659 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77740CB518EF91ED0094E659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77740CC218EF91EE0094E659 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77740C9218EF91EC0094E659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77740CAD18EF91EC0094E659 /* AppDelegate.m in Sources */,
+				77740CA618EF91EC0094E659 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77740CB318EF91ED0094E659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77740CC418EF91EE0094E659 /* MacNagiosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77740CBC18EF91ED0094E659 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77740C9518EF91EC0094E659 /* MacNagios */;
+			targetProxy = 77740CBB18EF91ED0094E659 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77740CA218EF91EC0094E659 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77740CA318EF91EC0094E659 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		77740CA818EF91EC0094E659 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77740CA918EF91EC0094E659 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		77740CAE18EF91ED0094E659 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77740CAF18EF91ED0094E659 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		77740CC018EF91EE0094E659 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77740CC118EF91EE0094E659 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77740CC518EF91EE0094E659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		77740CC618EF91EE0094E659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		77740CC818EF91EE0094E659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacNagios/MacNagios-Prefix.pch";
+				INFOPLIST_FILE = "MacNagios/MacNagios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		77740CC918EF91EE0094E659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacNagios/MacNagios-Prefix.pch";
+				INFOPLIST_FILE = "MacNagios/MacNagios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		77740CCB18EF91EE0094E659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacNagios.app/Contents/MacOS/MacNagios";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacNagios/MacNagios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MacNagiosTests/MacNagiosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		77740CCC18EF91EE0094E659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacNagios.app/Contents/MacOS/MacNagios";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacNagios/MacNagios-Prefix.pch";
+				INFOPLIST_FILE = "MacNagiosTests/MacNagiosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77740C9118EF91EC0094E659 /* Build configuration list for PBXProject "MacNagios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77740CC518EF91EE0094E659 /* Debug */,
+				77740CC618EF91EE0094E659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77740CC718EF91EE0094E659 /* Build configuration list for PBXNativeTarget "MacNagios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77740CC818EF91EE0094E659 /* Debug */,
+				77740CC918EF91EE0094E659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77740CCA18EF91EE0094E659 /* Build configuration list for PBXNativeTarget "MacNagiosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77740CCB18EF91EE0094E659 /* Debug */,
+				77740CCC18EF91EE0094E659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77740C8E18EF91EC0094E659 /* Project object */;
+}
