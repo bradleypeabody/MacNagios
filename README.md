@@ -34,12 +34,12 @@ Installation - Client
 			<!-- point this at your nagios setup - see other instructions for how to get statusJson.php -->
 			<dict>
 				<key>Name</key>
-				<string>Example1</string>
+				<string>Example1</string> <!-- what's in a name -->
 				<key>URL</key>
-				<string>http://example.com/nagios/statusJson.php</string>
+				<string>http://example.com/nagios/statusJson.php</string> <!-- this is where the real data comes from, as JSON -->
 				<key>AdminURL</key>
-				<string>http://admin.edit.firechrome.org/nagios/</string>
-				<key>Username</key>
+				<string>http://admin.edit.firechrome.org/nagios/</string> <!-- this is where you go when you click for more info about the status -->
+				<key>Username</key> <!-- authentication data - comment this and the 2 next lines out if you don't need it (i.e. you are restricting by IP) -->
 				<string>nagios</string>
 				<key>Password</key>
 				<string>secret</string>
@@ -59,17 +59,18 @@ Installation - Client
 				<string>secret</string>
 			</dict>
 		
-		</array>
+			</array>
 		
 		</dict>
-		
 		</plist>
 
 
-Note that you'll need to add a file on the Nagios server, see below.
+Note that you'll need to add the statusJson.php file on the Nagios server, see below.
 
 Server Setup
 ============
+
+
 
 Downloads
 =========
