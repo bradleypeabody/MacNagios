@@ -88,7 +88,7 @@ Downloads
 =========
 (MacOS X 10.9+ 64-bit)
 
-v0.3 - https://drive.google.com/file/d/0B8eMv4SjaIClSkRfRUlGVjJsRms (File -> Download)
+v0.3.1 - https://drive.google.com/file/d/0B8eMv4SjaIClN09ReDdRZmNIVlU (File -> Download)
 
 FAQ
 ===
