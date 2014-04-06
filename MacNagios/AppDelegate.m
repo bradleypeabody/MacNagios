@@ -198,7 +198,7 @@
         
         // Prepare the request object
         NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url
-                                                                  cachePolicy:NSURLRequestReturnCacheDataElseLoad
+                                                                  cachePolicy:NSURLRequestReloadIgnoringCacheData
                                                               timeoutInterval:30];
         
         if (username != nil && [username length] > 0) {
