@@ -105,7 +105,7 @@ And you'll probably see stuff like "Error while getting URL..." - which you shou
 
 ### Does MacNagios support Nagios' 4+ statusjson.cgi
 
-Unfortunately not.  When I made this I had two Nagios servers neither of which were running on Nagios 4.  So I ended up going the statusJson.php route, which is easy to set up on any version of Nagios (at least 2+).  This should be added as a feature though.  Pull requests welcome.
+Unfortunately not.  When I made this I had two Nagios servers neither of which were running on Nagios 4.  So I ended up going the statusJson.php route, which is easy to set up on any version of Nagios (at least 2+).  Support for statusjson.cgi should be added as a feature though.  Pull requests welcome.
 
 ### Does MacNagios report on hosts?
 
