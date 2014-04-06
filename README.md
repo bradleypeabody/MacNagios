@@ -86,7 +86,7 @@ Installation is really simple:
 
 Downloads
 =========
-(MacOS X 10.9+ 64-bit)
+(MacOS X 10.9+ 64-bit / in theory it should work on 10.8, but not tested)
 
 v0.3.1 - https://drive.google.com/file/d/0B8eMv4SjaIClN09ReDdRZmNIVlU (File -> Download)
 
