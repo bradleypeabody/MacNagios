@@ -204,7 +204,14 @@
         if (username != nil && [username length] > 0) {
             NSString *authStr = [NSString stringWithFormat:@"%@:%@", username, password];
             NSData *authData = [authStr dataUsingEncoding:NSUTF8StringEncoding];
-            NSString *authValue = [NSString stringWithFormat:@"Basic %@", [authData base64EncodedStringWithOptions:0]];
+            
+            NSString *authValue;
+            if ([authData respondsToSelector:@selector(base64EncodedDataWithOptions:)]) { // base64EncodedDataWithOptions is 10.9+, tks to Volen Davidov for the tip
+                authValue = [NSString stringWithFormat:@"Basic %@", [authData base64EncodedStringWithOptions:0]];
+            } else {
+                authValue = [NSString stringWithFormat:@"Basic %@", [authData base64Encoding]];
+            }
+            
             [urlRequest setValue:authValue forHTTPHeaderField:@"Authorization"];
         }
         
