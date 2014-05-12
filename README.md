@@ -120,4 +120,4 @@ No.  But the program might be, considering it's name.
 
 Credits
 =======
-MacNagios was written by Brad Peabody.  Inspired by NagiosDock (http://nagiosdock.sourceforge.net/), I needed something more up to date that just made it simple for me to get the feedback on multiple nagios instances easily from my Mac workstation.
+MacNagios was written by Brad Peabody.  Inspired by NagiosDock (http://nagiosdock.sourceforge.net/), I needed something more up to date that just made it simple for me to get the feedback on multiple nagios instances easily from my Mac workstation.  Kudos to Volen Davidov who independently wrote NagBar (https://sites.google.com/site/nagbarapp/) and happened to release it the same weekend as I did this project (seriously crazy coincidence - neither of us had any prior knowledge of the other's project and they both showed up on Nagios Exchange on the same day) and was kind enough to contribute code and ideas regarding this project as well.
