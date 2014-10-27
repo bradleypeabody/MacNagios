@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		77740C9A18EF91EC0094E659 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77740C9918EF91EC0094E659 /* Cocoa.framework */; };
-		77740CA418EF91EC0094E659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77740CA218EF91EC0094E659 /* InfoPlist.strings */; };
 		77740CA618EF91EC0094E659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77740CA518EF91EC0094E659 /* main.m */; };
 		77740CAA18EF91EC0094E659 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 77740CA818EF91EC0094E659 /* Credits.rtf */; };
 		77740CAD18EF91EC0094E659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77740CAC18EF91EC0094E659 /* AppDelegate.m */; };
@@ -44,7 +43,6 @@
 		77740C9D18EF91EC0094E659 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		77740C9E18EF91EC0094E659 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		77740CA118EF91EC0094E659 /* MacNagios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacNagios-Info.plist"; sourceTree = "<group>"; };
-		77740CA318EF91EC0094E659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		77740CA518EF91EC0094E659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77740CA718EF91EC0094E659 /* MacNagios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacNagios-Prefix.pch"; sourceTree = "<group>"; };
 		77740CA918EF91EC0094E659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 			children = (
 				77740CDA18EF92CC0094E659 /* macnagios-config.plist.sample */,
 				77740CA118EF91EC0094E659 /* MacNagios-Info.plist */,
-				77740CA218EF91EC0094E659 /* InfoPlist.strings */,
 				77740CA518EF91EC0094E659 /* main.m */,
 				77740CA718EF91EC0094E659 /* MacNagios-Prefix.pch */,
 				77740CA818EF91EC0094E659 /* Credits.rtf */,
@@ -261,7 +258,6 @@
 			files = (
 				77740CD618EF92A10094E659 /* nagios-icon-smaller-red.png in Resources */,
 				77740CD418EF92A10094E659 /* nagios-icon-smaller-green.png in Resources */,
-				77740CA418EF91EC0094E659 /* InfoPlist.strings in Resources */,
 				77740CD818EF92A10094E659 /* nagios-icon-smaller.png in Resources */,
 				77740CD518EF92A10094E659 /* nagios-icon-smaller-orange.png in Resources */,
 				77740CB218EF91ED0094E659 /* Images.xcassets in Resources */,
@@ -312,14 +308,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		77740CA218EF91EC0094E659 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77740CA318EF91EC0094E659 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		77740CA818EF91EC0094E659 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,6 +490,7 @@
 				77740CC918EF91EE0094E659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77740CCA18EF91EE0094E659 /* Build configuration list for PBXNativeTarget "MacNagiosTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +499,7 @@
 				77740CCC18EF91EE0094E659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
